@@ -5,7 +5,7 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 // Create a connection to the Azure MySQL database
-$servername = "localhost";
+$servername = "myeganserver.mysql.database.azure.com";
 $username = "teresa";
 $password = "TvaCae041r";
 $database = "myegandatabase";
