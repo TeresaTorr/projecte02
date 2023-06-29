@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 }
 
 // Insert the form data into the database
-$sql = "INSERT INTO your_table_name (name, email, message) VALUES ('$name', '$email', '$message')";
+$sql = "INSERT INTO form_data (name, email, message) VALUES ('$name', '$email', '$message')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Data stored successfully!";
