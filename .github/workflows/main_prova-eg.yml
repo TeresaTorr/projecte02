@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'prova-EG'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D6A718ED403241BEAABAABF1EA8C7425 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0C2F5E706A3F4AF4B94EB4EF3191C15F }}
           package: .
