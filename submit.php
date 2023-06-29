@@ -11,7 +11,7 @@ $password = "TvaCae041r";
 $database = "myegandatabase";
 
 $con = mysqli_init();
-mysqli_ssl_set($con, NULL, NULL, "{path to CA cert}", NULL, NULL);
+mysqli_ssl_set($con, NULL, NULL, "myeganserver_myegandatabase.crt", NULL, NULL);
 mysqli_real_connect($con, $servername, $username, $password, $database, 3306, NULL, MYSQLI_CLIENT_SSL);
 
 // Check the connection
@@ -31,3 +31,4 @@ if ($con->query($sql) === TRUE) {
 // Close the database connection
 $con->close();
 ?>
+
