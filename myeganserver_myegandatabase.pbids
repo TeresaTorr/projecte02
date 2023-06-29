@@ -1,1 +1,0 @@
-{"version":"1.0","connections":[{"details":{"protocol":"mysql","address":{"server":"myeganserver.mysql.database.azure.com","database":"myegandatabase"}},"options":{"ReturnSingleDatabase":true}}]}
