@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fes-te soci/a</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <button onclick="window.location.href='index.html'">Principal</button>
+    <button onclick="window.location.href='el_club.html'">El club</button>
+    <button onclick="window.location.href='noticies.html'">Notícies</button>
+    <button onclick="window.location.href='fes-te_soci.html'">Fes-te soci/a</button>
+  </header>
+
+  <main>
+    <h1>Si us voleu fer socis de l'EGAN i federar-vos si us plau responeu a les seguents preguntes:</h1>
+
+    <form action="submit.php" method="POST">
+      <label for="name">Nom:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Missatge:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+      <input type="submit" value="Enviar">
+    </form>
+
+    <p>Tingueu present que cal esperar 10 dies perquè estigueu completament federats. De totes maneres, us enviarem un correu electrònic de confirmació.</p>
+  </main>
+</body>
+</html>

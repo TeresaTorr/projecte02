@@ -1,0 +1,106 @@
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F0F0F0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #2C3E50;
+  padding: 20px;
+  text-align: center;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Main */
+main {
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #2C3E50;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  color: #555555;
+}
+
+/* Form */
+form {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+form input[type="submit"] {
+  background-color: #2C3E50;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Images */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  max-width: 25%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Images - Principal */
+.image-container.principal {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-container.principal img {
+  max-width: 25%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+  }
+}

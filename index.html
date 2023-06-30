@@ -1,29 +1,25 @@
 <!DOCTYPE html>
-
-
 <html>
 <head>
-	<title>Benvinguts a EGAN html</title>
-	
-
+  <title>Benvinguts a EGAN html</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<H1>Si us voleu fer socis de l'EGAN i federar-vos si us plau responeu a les seguents preguntes:</H1>
+  <header>
+    <button onclick="window.location.href='index.html'">Principal</button>
+    <button onclick="window.location.href='el_club.html'">El club</button>
+    <button onclick="window.location.href='noticies.html'">Notícies</button>
+    <button onclick="window.location.href='fes-te_soci.html'">Fes-te soci/a</button>
+  </header>
 
-    <form action="submit.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-        
-        <input type="submit" value="Submit">
-    </form>
-	
-	<p>Tingueu present que cal esperar 10 dies perquè estigueu completament federats. De totes maneres us enviarem un email de confirmacio
-	</p>
+  <main>
+    <h1>Benvinguts a l'EGAN</h1>
+    <p>Un club d'espeleologia, barranquisme, muntanyisme i aventures entre cordes.</p>
+
+    <div class="image-container principal">
+      <img src="img03.jpg" alt="Image 1">
+    
+    </div>
+  </main>
 </body>
 </html>
