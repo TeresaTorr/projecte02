@@ -1,25 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="ca">
+
 <head>
-  <title>Benvinguts a EGAN html</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=0.8">
+  <title>EGAN</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add CSS styles for the cookies pop-up */
+    #cookies-popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+    }
+
+    #cookies-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <button onclick="window.location.href='index.html'">Principal</button>
-    <button onclick="window.location.href='el_club.html'">El club</button>
-    <button onclick="window.location.href='noticies.html'">Notícies</button>
-    <button onclick="window.location.href='fes-te_soci.html'">Fes-te soci/a</button>
+    <div class="header-container1">
+      <div class="logo">
+        <img src="logo.jpg" alt="Logo">
+      </div>
+      <h2 class="container-title">EGAN - Espelo Grup Anoia</h2>
+    </div>
+    <div class="header-container2">
+      <nav class="nav-header">
+        <button class="button" onclick="window.location.href='index.html'">Principal</button>
+        <button class="button" onclick="window.location.href='el_club.html'">El club</button>
+        <button class="button" onclick="window.location.href='noticies.html'">Notícies</button>
+        <button class="button" onclick="window.location.href='fes-te_soci.html'">Fes-te soci/a</button>
+      </nav>
+    </div>
   </header>
-
-  <main>
-    <h1>Benvinguts a l'EGAN</h1>
-    <p>Un club d'espeleologia, barranquisme, muntanyisme i aventures entre cordes.</p>
-
-    <div class="image-container principal">
-      <img src="img03.jpg" alt="Image 1">
-    
+  <main class="principal">
+    <div class="left-menu-container">
+      <nav class="nav-left-menu">
+        <button class="button-left" onclick="window.location.href='junta_actual.html'">Junta actual</button>
+        <button class="button-left" onclick="window.location.href='contacte.html'">Contacte</button>
+      </nav>
+    </div>
+    <div class="big-image">
+      <img src="montserrat3.jpg" alt="montserrat">
+      <div class="content-container">
+        <h1>Benvingut/da a l'EGAN - Espeleo Grup Anoia</h1>
+        <p>Un club d'espeleologia, barranquisme, muntanyisme i aventures entre cordes. Ens uneix la passió per l'aventura a la naturalesa, ja sigui sota cascades, a cims i les profunditats dels avencs. Creiem que la protecció de la naturalesa és inherent a la pràctica dels esports de muntanya de qualsevol tipus.</p>
+      </div>
     </div>
   </main>
+
+  <footer>
+    <nav class="nav-footer">
+      <button class="button-footer" onclick="window.location.href='cookies.html'">Cookies</button>
+      <button class="button-footer" onclick="window.location.href='privacitat.html'">Privacitat</button>
+    </nav>
+  </footer>
+
+
+  <div id="cookies-popup">
+    <div id="cookies-content">
+
+      <h2>Política de cookies</h2>
+
+      <p>Consulta la nostra <a href="cookies.html" target="_blank">política de cookies</a>.</p>
+      <button id="cookies-accept">Acceptar</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Check if the user has accepted the cookies policy
+      if (!localStorage.getItem('cookiesAccepted')) {
+        $('#cookies-popup').show(); // Show the pop-up if not accepted
+      }
+
+      // Handle the accept button click event
+      $('#cookies-accept').click(function() {
+        localStorage.setItem('cookiesAccepted', true); // Store the acceptance in localStorage
+        $('#cookies-popup').hide(); // Hide the pop-up
+      });
+    });
+  </script>
 </body>
+
 </html>
